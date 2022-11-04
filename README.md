@@ -11,15 +11,16 @@
 
 ## Description
 
-### _Python code review for week 1 of Data Engineering showing the use of lists, dictionaries, tuples, functions and loops._
-`list_sayer()` \
--_Takes list as argument and prints list with corresponding index number and returns True. If list is empty prints "The list is empty" and returns False._\
-`dict_sayer()`\
--_Takes dictionary as an argument and prints a string for each Key and Value and returns True. If dictionary is empty, prints string "Dictionary Empty!" and returns False._ \
-`greatest()`\
--_Takes dictionary that has keys that are strings and values that are integers. Finds greatest value and returns tuple with greatest value and corresponding key._ \
-`zipper()`\
--_Takes two lists as arguments and returns dictionary with first list as key and second list as value if lists have same length (all in same index order). If lists do not have the same length, returns a tuple with each list and each list's length._
+ _Python code review for week 1 of Data Engineering showing the use of lists, dictionaries, tuples, functions and loops._ 
+
+- `list_sayer()`-
+- _Takes list as argument and prints list with corresponding index number and returns True. If list is empty prints "The list is empty" and returns False._
+- `dict_sayer()`-
+- _Takes dictionary as an argument and prints a string for each Key and Value and returns True. If dictionary is empty, prints string "Dictionary Empty!" and returns False._ 
+- `greatest()`-
+- _Takes dictionary that has keys that are strings and values that are integers. Finds greatest value and returns tuple with greatest value and corresponding key._ 
+- `zipper()`-
+- _Takes two lists as arguments and returns dictionary with first list as key and second list as value if lists have same length (all in same index order). If lists do not have the same length, returns a tuple with each list and each list's length._
 
 ## Setup/Installation Requirements
 
