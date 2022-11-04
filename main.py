@@ -22,29 +22,29 @@ list_sayer(empty_list)
 # test dictionaries
 dict_test = {"A": 1, "B": 2, "C": 3}
 dict_empty = {}
-# write function called dict_sayer that takes dictionary as an argument
+# write function called dict_sayer that takes dict as an argument
 
 
-def dict_sayer(dictionary):
+def dict_sayer(dict):
   # if dict empty return false
-    if len(dictionary) == 0:
-        print("Dictionary empty")
+    if len(dict) == 0:
+        print("dict empty")
         return (False)
-    # if dictionary has items return key, value true
-    for key, value in dictionary.items():
+    # if dict has items return key, value true
+    for key, value in dict.items():
         print("Key: {} Value: {}".format(key, value))
     return (True)
 
 
 dict_sayer(dict_test)
 
-# write function called greatest() that takes dictionary as argument
+# write function called greatest() that takes dict as argument
 
 
-def greatest(dictionary):
+def greatest(dict):
     # define top value and corresponding key
-    top_value = max(dictionary.values())
-    top_key = max(dictionary, key=dictionary.get)
+    top_value = max(dict.values())
+    top_key = max(dict, key=dict.get)
     return (top_key, top_value)
 
 
@@ -62,9 +62,9 @@ list_d = ["tan", "sesame", "spotted"]
 
 
 def zipper(list1, list2):
-  # if list1 = list2 then return dictionary
+  # if list1 = list2 then return dict
     if len(list1) == len(list2):
-        return dictionary(zip(list1, list2))
+        return dict(zip(list1, list2))
     else:
         return tuple([list1, len(list1)]), tuple([list2, len(list2)])
 
