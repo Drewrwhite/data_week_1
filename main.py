@@ -50,7 +50,22 @@ def greatest(dictionary):
     # get top value and key to return together
 greatest(dict_test)
 
+
+# test lists for zipper()
+list_a = ["Aengus", "Bear", "Cali"]
+list_b = ["6yo", "15yo", "9yo"]
+list_c = ["a", "b", "c", "d"]
+list_d = ["tan", "sesame", "spotted"]
+
 # write function called zipper() that take 2 lists as arguments
 
 
 def zipper(list1, list2):
+  # if list1 = list2 then return dictionary
+    if len(list1) == len(list2):
+        return dictionary(zip(list1, list2))
+    else:
+        return tuple([list1, len(list1)]), tuple([list2, len(list2)])
+
+
+zipper(list_a, list_d)
