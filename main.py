@@ -46,5 +46,11 @@ def greatest(dictionary):
     top_key = max(dictionary, key=dictionary.get)
     return (top_key, top_value)
 
+
     # get top value and key to return together
 greatest(dict_test)
+
+# write function called zipper() that take 2 lists as arguments
+
+
+def zipper(list1, list2):
