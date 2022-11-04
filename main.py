@@ -41,9 +41,10 @@ dict_sayer(dict_test)
 
 
 def greatest(dictionary):
+    # define top value and corresponding key
     top_value = max(dictionary.values())
     top_key = max(dictionary, key=dictionary.get)
     return (top_key, top_value)
 
-
+    # get top value and key to return together
 greatest(dict_test)
