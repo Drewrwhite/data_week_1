@@ -4,7 +4,7 @@ things = ["guitar", "cup", "watch"]
 empty_list = []
 
 
-def list_sayer(list):  # create function called list_sayer() that takes list as an argument
+def list_sayer(list):  # write function called list_sayer() that takes list as an argument
 
     if list == []:  # if list is empty return false list is empty
         print("The list is empty")
@@ -21,7 +21,7 @@ list_sayer(empty_list)
 # Example dictionaries
 dict_test = {"A": 1, "B": 2, "C": 3}
 dict_empty = {}
-# write function that takes dictionary as an argument
+# write function called dict_sayer that takes dictionary as an argument
 
 
 def dict_sayer(dictionary):
@@ -36,3 +36,14 @@ def dict_sayer(dictionary):
 
 
 dict_sayer(dict_test)
+
+# write function called greatest() that takes dictionary as argument
+
+
+def greatest(dictionary):
+    top_value = max(dictionary.values())
+    top_key = max(dictionary, key=dictionary.get)
+    return (top_key, top_value)
+
+
+greatest(dict_test)
