@@ -20,7 +20,7 @@ def list_sayer(list):
 list_sayer(empty_list)
 
 # test dictionaries
-dict_test = {"A": 1, "B": 2, "C": 3}
+dict_test = {"A": 1, "B": 7, "C": 3}
 dict_empty = {}
 # write function called dict_sayer that takes dict as an argument
 
@@ -28,7 +28,7 @@ dict_empty = {}
 def dict_sayer(dict):
   # if dict empty return false
     if len(dict) == 0:
-        print("dict empty")
+        print("Dictionary Empty!")
         return (False)
     # if dict has items return key, value true
     for key, value in dict.items():
@@ -65,6 +65,7 @@ def zipper(list1, list2):
   # if list1 = list2 then return dict
     if len(list1) == len(list2):
         return dict(zip(list1, list2))
+  # if list1 not equal to list2 then return tuple with lists and number of items
     else:
         return tuple([list1, len(list1)]), tuple([list2, len(list2)])
 
