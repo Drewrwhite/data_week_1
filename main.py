@@ -25,10 +25,14 @@ dict_empty = {}
 
 
 def dict_sayer(dictionary):
-
-    for key, value in dictionary.items():
-      print("Key: {} Value: {}".format(key, value))
-      return (True)
+  # if dict empty return false
     if len(dictionary) == 0:
-      print("Dictionary empty"
-    return (False)
+        print("Dictionary empty")
+        return (False)
+    # if dictionary has items return key, value true
+    for key, value in dictionary.items():
+        print("Key: {} Value: {}".format(key, value))
+    return (True)
+
+
+dict_sayer(dict_test)
