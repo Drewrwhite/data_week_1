@@ -67,7 +67,7 @@ def zipper(list1, list2):
         return dict(zip(list1, list2))
   # if list1 not equal to list2 then return tuple with lists and number of items
     else:
-        return tuple([list1, len(list1)]), tuple([list2, len(list2)])
+        return tuple([list1, len(list1), [list2, len(list2)]])
 
 
 zipper(list_a, list_d)
